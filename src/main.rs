@@ -17,6 +17,6 @@ fn legacy_interface() -> u8 {
 }
 
 fn main() {
-    let status: Status = legacy_interface().into();
-    let status = Status::from(legacy_interface());
+    let status: Status = legacy_interface().into(); //"Code one and get one for free" Rust.
+    let status = Status::from(legacy_interface()); //from function will convert "legacy_interface()" outcome into Status
 }
